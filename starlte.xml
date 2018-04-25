@@ -2,6 +2,19 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <starlte>
+            <Filename>RR-O-v6.0.0-20180425-starlte-Official.zip</Filename>
+            <LatestBuildUrl
+                id="latestbuild"
+                title="Latest Build"
+                description="Download Latest Build">http://downloads.resurrectionremix.com/starlte/RR-O-v6.0.0-20180425-starlte-Official.zip</LatestBuildUrl>
+            <BuildUrl
+                id="build"
+                title="Build"
+                description="Download a Build">http://downloads.resurrectionremix.com/starlte/</BuildUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelogs">https://github.com/msdx321/RR-OTA/blob/RR-O-v6.0.0-20180425-starlte-Official-Changelog.txt</ChangelogUrl>
 	</starlte>
     </Stable>
 </SlimOTA>
