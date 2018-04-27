@@ -1,0 +1,452 @@
+
+ ▼ Resurrection Remix Oreo Ver 6.0.0 Changelog
+
+
+====================
+     04-27-2018
+====================
+
+
+   * device/samsung/star2lte/
+5d83979 starlte: Add RR support
+
+   * kernel/samsung/universal9810/
+5cd2276 star2lte: Sync defconfig with starlte
+b6e4c4d star2lte: Regen defconfig
+e8f66ce star: Separate build scripts
+
+====================
+     04-26-2018
+====================
+
+
+   * device/samsung/star-common/
+b16b58d star: Tune sched/cpuset a bit
+0da8bfc star: HAX: Fix USB connection [TEMP]
+61f3269 Revert "star: overlay: use stock navbar button layout by default"
+bc2fbbe star: Enable zram
+06f05ae Revert "star: rootdir: add default schedtune boost configs"
+2ef151b star: Add RR support
+9c57ce9 star: releasetools: Run resize2fs on /system partition
+6fbcbb1 star: overlay: apply padding for rounded corner
+92999db Revert "star: overlay: apply padding for rounded corner"
+43a4579 star: overlay: use stock navbar button layout by default
+
+   * device/samsung/starlte/
+98de601 starlte: Set density to 560
+c6d11aa starlte: Add RR support
+eeb80d5 starlte: correct density to 640
+
+   * frameworks/base/
+3831dbc HAX: Force maxAspectRatio to 2.1
+
+====================
+     04-25-2018
+====================
+
+
+   * device/samsung/star-common/
+8b015c1 Revert "star: overlay: use stock navbar button layout by default"
+
+   * external/f2fs-tools/
+518114d mkfs.f2fs: support fsverity feature
+
+   * frameworks/base/
+76ef8b0 Revert "Fw_base - custom Toast color options (1/2)"
+
+   * kernel/samsung/universal9810/
+8f69d29 star: Don't append '+' for short local version
+95ea64c star: Set local version to ResurrectionRemix
+595d712 star: Update defconfig
+c117840 arm64: always enable DEBUG_RODATA and remove the Kconfig option
+6378149 arm64:entry.S: Remove ELS marks
+c7bfb44 Revert "iommu/exynos: Block SYSMMU while invalidating FLPD cache"
+d600f2a Revert "iommu/exynos: Workaround FLPD cache flush issues for SYSMMU v5"
+3002ea5f Revert "dma-fence: Introduce drm_fence_set_error() helper"
+f1752ea dma-buf: reset state back to ARCC stock source
+44d46e4 tcp_input: move define FLAG_NO_CHALLENGE_ACK out of #ifndef CONFIG_MPTCP
+263595c Merge remote-tracking branch 'aosp/android-4.9-o' into oreo
+f52f40e Merge 4.9.96 into android-4.9-o
+5cd35f3 Linux 4.9.96
+8d7f1fd block/mq: fix potential deadlock during cpu hotplug
+18484eb writeback: safer lock nesting
+71f24a9 fanotify: fix logic of events on child
+f4c86fa mm/filemap.c: fix NULL pointer in page_cache_tree_insert()
+858052b autofs: mount point create should honour passed in mode
+3f68e22e Don't leak MNT_INTERNAL away from internal mounts
+463f845 rpc_pipefs: fix double-dput()
+e2210c5 orangefs_kill_sb(): deal with allocation failures
+f3ba3ea hypfs_kill_super(): deal with failed allocations
+02d20e6 jffs2_kill_sb(): deal with failed allocations
+8c72cf4 udf: Fix leak of UTF-16 surrogates into encoded strings
+22578e2 powerpc/lib: Fix off-by-one in alternate feature patching
+73de98f powerpc/eeh: Fix enabling bridge MMIO windows
+95a9a52 MIPS: memset.S: Fix clobber of v1 in last_fixup
+6cd712b MIPS: memset.S: Fix return of __clear_user from Lpartial_fixup
+7177f0b MIPS: memset.S: EVA & fault support for small_memset
+1179774 MIPS: uaccess: Add micromips clobbers to bzero invocation
+d385cc6 HID: hidraw: Fix crash on HIDIOCGFEATURE with a destroyed device
+1d49e2a random: add new ioctl RNDRESEEDCRNG
+befd00c random: crng_reseed() should lock the crng instance that it is modifying
+4dfb344 random: fix crng_ready() test
+2e2389a ALSA: hda - New VIA controller suppor no-snoop path
+b291c27 ALSA: rawmidi: Fix missing input substream checks in compat ioctls
+f93f5ad ALSA: line6: Use correct endpoint type for midi output
+9607290 drm/radeon: Fix PCIe lane width calculation
+7c320ed drm/rockchip: Clear all interrupts before requesting the IRQ
+aab5948 drm/amdgpu: Fix PCIe lane width calculation
+267e692 drm/amdgpu: Fix always_valid bos multiple LRU insertions.
+5427992 drm/amdgpu: Add an ATPX quirk for hybrid laptop
+68e3579 ext4: don't allow r/w mounts if metadata blocks overlap the superblock
+ad81155 ALSA: pcm: Fix endless loop for XRUN recovery in OSS emulation
+24fd21a ALSA: pcm: Fix mutex unbalance in OSS emulation ioctls
+3724f9c ALSA: pcm: Return -EBUSY for OSS ioctls changing busy streams
+159a136 ALSA: pcm: Avoid potential races between OSS ioctls and read/write
+8ede8ba ALSA: pcm: Use ERESTARTSYS instead of EINTR in OSS emulation
+502b50e vfio/pci: Virtualize Maximum Read Request Size
+4076d92 watchdog: f71808e_wdt: Fix WD_EN register read
+e58d3bc dt-bindings: clock: mediatek: add binding for fixed-factor clock axisel_d4
+a84a584 thermal: imx: Fix race condition in imx_thermal_probe()
+f6ed0ff pwm: rcar: Fix a condition to prevent mismatch value setting to duty
+6af2423 clk: bcm2835: De-assert/assert PLL reset signal when appropriate
+5971ee2 clk: fix false-positive Wmaybe-uninitialized warning
+b2c89d8 clk: mvebu: armada-38x: add support for missing clocks
+1b22bdc clk: mvebu: armada-38x: add support for 1866MHz variants
+4685f78 mmc: jz4740: Fix race condition in IRQ mask update
+94911a0 iommu/vt-d: Fix a potential memory leak
+2413ed8 um: Use POSIX ucontext_t instead of struct ucontext
+8280752 um: Compile with modern headers
+1c72e23 nfit, address-range-scrub: fix scrub in-progress reporting
+a1ada79 libnvdimm, namespace: use a safe lookup for dimm device name
+5d15187 dmaengine: at_xdmac: fix rare residue corruption
+16757e7 IB/srp: Fix completion vector assignment algorithm
+f437499 IB/srp: Fix srp_abort()
+dd34b66 ALSA: pcm: Fix UAF at PCM release via PCM timer access
+4b37ec8 RDMA/rxe: Fix an out-of-bounds read
+8e45591 RDMA/ucma: Don't allow setting RDMA_OPTION_IB_PATH without an RDMA device
+6b289a7 ext4: fail ext4_iget for root directory if unallocated
+c636feb ext4: protect i_disksize update by i_data_sem in direct write path
+a06b798 ext4: don't update checksum of new initialized bitmaps
+82aad4a jbd2: if the journal is aborted then don't allow update of the log tail
+bb6f26a random: use a tighter cap in credit_entropy_bits_safe()
+910d840 irqchip/gic: Take lock when updating irq type
+c9bb6fb thunderbolt: Resume control channel after hibernation image is created
+2e9feaf ASoC: ssm2602: Replace reg_default_raw with reg_default
+4b43f41 HID: core: Fix size as type u32
+10ab7c9 HID: Fix hid_report_len usage
+5aa8b5b powerpc/powernv: Fix OPAL NVRAM driver OPAL_BUSY loops
+8923141 powerpc/powernv: define a standard delay for OPAL_BUSY type retry loops
+59f404e powerpc/64: Fix smp_wmb barrier definition use use lwsync consistently
+f3ccc32 powerpc/powernv: Handle unknown OPAL errors in opal_nvram_write()
+b599902 HID: i2c-hid: fix size check and type usage
+c4bc658 smb3: Fix root directory when server returns inode number of zero
+cd93ff9 usb: dwc3: pci: Properly cleanup resource
+73300bd USB:fix USB3 devices behind USB3 hubs not resuming at hibernate thaw
+b3b0809 USB: gadget: f_midi: fixing a possible double-free in f_midi
+a59ba73 ACPI / hotplug / PCI: Check presence of slot itself in get_slot_status()
+e324a44 ACPI / video: Add quirk to force acpi-video backlight on Samsung 670Z5E
+cddf0e1 regmap: Fix reversed bounds check in regmap_raw_write()
+9c78aee xen-netfront: Fix hang on device removal
+34023ca spi: Fix scatterlist elements size in spi_map_buf
+61ec850 ARM: dts: at91: sama5d4: fix pinctrl compatible string
+50b4737 ARM: dts: exynos: Fix IOMMU support for GScaler devices on Exynos5250
+0787285 ARM: dts: at91: at91sam9g25: fix mux-mask pinctrl property
+ba260ce usb: gadget: udc: core: update usb_ep_queue() documentation
+a576d7f usb: musb: gadget: misplaced out of bounds check
+75e6359 mm, slab: reschedule cache_reap() on the same CPU
+570ef10 ipc/shm: fix use-after-free of shm file via remap_file_pages()
+0df9b12 resource: fix integer overflow at reallocation
+52b329d6 fs/reiserfs/journal.c: add missing resierfs_warning() arg
+c64c4c8 ubi: Reject MLC NAND
+434a1dd ubi: Fix error for write access
+00f308c ubi: fastmap: Don't flush fastmap work on detach
+cf1595d ubifs: Check ubifs_wbuf_sync() return code
+a7e1906 tty: make n_tty_read() always abort if hangup is in progress
+
+   * packages/apps/Settings/
+86b0583 Revert "Settings - custom Toast color options (2/2)"
+
+====================
+     04-24-2018
+====================
+
+
+   * device/samsung/star-common/
+57b70d1 star: do not use mke2fs
+444726d star: add aptX libs
+
+   * frameworks/av/
+64e3888 camera/media: Support legacy HALv1 camera in mediaserver
+c1bdcc7 libstagefright: use 64-bit usage for native_window_set_usage
+cd81fda libstagefright: Free buffers on observer died
+71b26c3 stagefright: ACodec: Resolve empty vendor parameters usage
+d4efdea Camera: Add support for preview frame fd
+7a1f128 Camera: Add extensions to CameraClient
+8b421a8 libstagefright: encoder must exist when source starting
+
+   * kernel/samsung/universal9810/
+6e90a7c starlte: Enable zram
+9d06310 starlte: Kill zswap
+53b7eee starlte: Enable BFQ
+8267136 Turn into BFQ-v8r7 for 4.9.0
+e095713 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r11 for 4.5.0
+f9d6479b block: introduce the BFQ-v7r11 I/O sched for 4.5.0
+7d87260 block: cgroups, kconfig, build bits for BFQ-v7r11-4.5.0
+0f8da07 starlte: No advanced TCP congs
+3c89596d samsung: exynos-hotplug_governor: Extend PM suspend timeout
+5b2b6d2 starlte: Use power_efficient_wq by default
+0c14977 starlte: Make power_efficient_wq tunable
+5d43d89 starlte: Skip kernel's sys_sync() on suspend to RAM/standby
+2458392 starlte: Disable KSM
+27ce217 starlte: Update .gitignore
+6048b8e starlte: Using my own script
+
+   * vendor/samsung/
+c38dc6f star: add aptX libs
+
+====================
+     04-23-2018
+====================
+
+   * android/
+b82fc71 manifest: Remove LiveDisplay repo
+
+   * build/make/
+7615a59 Add build.prop to incrementals too
+825cdc4 build: allow forcing build of otatools
+
+   * device/qcom/sepolicy/
+d9c24de Merge branch 'lineage-15.1' into oreo
+
+   * device/rr/sepolicy/
+fb968d7 Merge branch 'lineage-15.1' into oreo
+bc582cd Allow recovery write to sysfs_graphics
+590946d Remove adb.secure recovery property context
+20b9d1c sepolicy: Add rules for LiveDisplay HIDL HAL
+
+   * device/samsung/star-common/
+39e0cd8 star: overlay: enable doze pickup gesture
+
+   * frameworks/base/
+
+   * hardware/lineage/lineagehw/
+ed11fda lineagehw: Link livedisplay library statically
+
+   * lineage-sdk/
+a395cc3 lineage-sdk: Allow adjusting brightness of non-RGB LEDs
+
+   * packages/apps/DUI/
+
+   * packages/apps/LineageParts/
+d2ff5e5 LineageParts: Allow adjusting brightness of non-RGB LEDs
+d7a5830 LineageParts: Fix loading default colors for non-RGB lights
+f10570a LineageParts: Fix removing LED brightness settings
+
+   * packages/apps/ResurrectionOTA/
+
+   * packages/apps/Settings/
+ecdb6e7 Add Samsung S9 (starlte)
+11067f4 Add S6 Edge (zeroltexx)
+
+   * system/core/
+6956422 Merge branch 'lineage-15.1' into oreo
+
+   * vendor/rr/
+3eae19c envsetup: Fix lineageremote for caf    *s
+261cb47 lineage-radio: disable ims services on ro.radio.noril
+33c8d93 build: kernel: Use LLVM_PREBUILTS_VERSION if no version is specified
+58dd6f9 lineage: enable building otatools with generic targets
+
+====================
+     04-22-2018
+====================
+
+
+   * device/rr/sepolicy/
+98c7f8d Allow recovery write to sysfs_graphics
+541bcf2 Remove adb.secure recovery property context
+
+   * device/samsung/star-common/
+fc7a393 star: overlay: use stock navbar button layout by default
+08f9054 star: overlay: set fast charging indicator threshold to 10.8W
+
+   * device/samsung/star2lte/
+12254b7 star: bluetooth: remove redundant defines
+
+   * device/samsung/starlte/
+2e3b7e6 star: bluetooth: remove redundant defines
+
+   * kernel/samsung/universal9810/
+85b1d2d battery: sec_battery: export {CURRENT/VOLTAGE}_MAX to sysfs
+
+   * packages/apps/Snap/
+a0f6bf7 Fix snapshot failed with logical camera
+a83f85c Add ui toast for bokeh
+
+   * vendor/nxp/opensource/external/libnfc-nci/
+f48a623 Fix description path for libnqp61-jcop-kit and move to vendor
+
+====================
+     04-21-2018
+====================
+
+
+   * bootable/recovery/
+0c08e7c recovery: Fix loading time from /persist
+c7ec3a7 recovery: Don't try to set ro.adb.secure
+36dd139 Revert "updater: Fix and improve allowing devices to suppress BLKDISCARD"
+
+   * device/qcom/sepolicy/
+be44088 legacy: Consistent indentation
+fe8868a legacy: Address mm-pp-daemon denials
+4504f04 legacy: Allow thermal-engine to read sysfs_spmi_dev
+4dd1cb2 legacy: Add debugfs rules for rmt_storage
+75573bd legacy: Allow hal_graphics_allocator_default access sysfs_graphics
+e8e4723 legacy: Allow hal_graphics_composer_default read firmware
+103e1dc legacy: Allow bluetooth_loader read persist
+443c0d8 legacy: Address perfd denials
+c51e127 legacy: Allow perfd write to sysfs_kgsl
+d233d17 legacy: Allow qcom power HAL to interact with perfd
+6bf41a0 hal_gnss_default: Do not log udp socket failures
+4b4dd9c sepolicy: Ignore more hal_memtrack denials
+9110cac sepolicy : add secontext for eMMC blocks
+d7045fa sepolicy: rules to allow camera daemon access to app buffer
+00dc45f sepolicy: Fix warnings related to set_prop
+
+   * device/samsung/star-common/
+4e3bcbb star: rootdir: add default schedtune boost configs
+45bd07b star: remap bixby key as ASSIST key
+6dc39ac star: overlay: Snap: open camera with HAL3
+0f6c322 star: overlay: apply padding for rounded corner
+c9f056b star: overlay: Advertize HWC2 color transform support
+9bdb48d star: overlay: configure vibe patterns
+703fd3b star: overlay: limit the number of fingerprints to 4
+01ad34c star: overlay: Animate screen-off
+fc3f4c7 star: overlay: enable advanced wifi features
+edae0dd star: overlay: reduce reaction time of auto brightness
+b910d8f star: overlay: enable burn-in protection
+64ca8aa star: overlay: enable doze AOD
+a2d80b2 star: overlay: Enable Ambient Display
+10e58cd star: overlay: import stock overlay
+2444e34 star: overlay-lineage: add hardware keys configuration
+904b22b star: overlay-lineage: add LED configuration
+f1f3c96 star: disable vendor overlay
+37f640c star: sepolicy: make rfkill sysfs writable for bluetooth HAL
+d75bfa1 star: force dual speaker on
+3052901 star: import stock system properties
+696a5cd star: vndk-compat: allow searching platform api folders
+5fd03a9 star: silence vendor interface not compatiable warning
+bb28c85 star: add custom fingerprint HAL
+88aa747 star: add custom lights HAL
+5fde328 star: add CP boot daemon
+df7c32e star: Do not include AudioFX
+601c86b star: apply fingerprint and model based on vendor values
+bd8dbc0 star: sepolicy: allow system_server to set boot_prop
+18fe1b4 star: remove duplicate exfat/sdfat defines from platform sepolicy
+30d8789 star: Use sdFAT for exFAT support
+abb2b7d star: add Samsung offline charging files
+e8e643c star: add vndk 26->27 compat layer
+a8c814f star: rootdir: include Samsung changes to ueventd.rc
+1cdcbe4 star: import stock init resources
+c629239 star: initial recovery support
+cffc52e star: initial file system support
+856d06e hero: configure partitions
+ef28ace star: support inline kernel build
+d6f731f star: initial basic device characteristics
+
+   * device/samsung/star2lte/
+5a16e6f Initial commit
+
+   * device/samsung/starlte/
+a985d68 Initial commit
+
+   * hardware/qcom/display-caf/apq8084/
+48c4337 display: Don't use gnu-oldstyle field designators
+
+   * kernel/samsung/universal9810/
+b4b8cc3 Merge tag 'v4.9.95' into android-4.9-o
+d4dd1a9 motor: sec_haptic: set max intensity to 800
+df838e6 input: sec_ts: bind input_open/close to display state
+20a2adf star: disable unsupported samsung encryption extensions
+3494677 universal9810: remove dependencies on platform version
+69b730d star: add kernel build script
+0480f8d star: set DTS_NAME
+8110ef4 arm64: exynos: introduce EXYNOS_DTS_NAME variable
+8d78ca6 star: disable Samsung MTP
+89d0680 drivers: usb: add separated Samsung MTP option
+eedaf21 Linux 4.9.95
+c3ba64b Revert "net: phy: micrel: Restore led_mode and clk_sel on resume"
+1cd969f arm64: futex: Mask __user pointers prior to dereference
+8223656 lan78xx: Correctly indicate invalid OTP
+72de989 vhost: fix vhost_vq_access_ok() log check
+0eecffb slip: Check if rstate is initialized before uncompressing
+fc89a75 rds: MP-RDS may use an invalid c_path
+6b61154 cdc_ether: flag the Cinterion AHS8 modem by gemalto as WWAN
+ebdb0d5 hwmon: (ina2xx) Fix access to uninitialized mutex
+bcd7de0 rtl8187: Fix NULL pointer dereference in priv->conf_mutex
+b0a2a2b Bluetooth: Fix connection if directed advertising and privacy is used
+960534a getname_kernel() needs to make sure that ->name != ->iname in long case
+d6bcc21 s390/ipl: ensure loadparm valid flag is set
+5a76887 s390/qdio: don't merge ERROR output buffers
+deda8e0 s390/qdio: don't retry EQBS after CCQ 96
+768fce4 nfit: fix region registration vs block-data-window ranges
+c353014 block/loop: fix deadlock after loop_set_status
+6ba906f Revert "perf tests: Decompress kernel module before objdump"
+994baf8 sunrpc: remove incorrect HMAC request initialization
+288b1dd arm64: Kill PSCI_GET_VERSION as a variant-2 workaround
+c24c205 arm64: Add ARM_SMCCC_ARCH_WORKAROUND_1 BP hardening support
+eb90973 arm/arm64: smccc: Implement SMCCC v1.1 inline primitive
+5d667c1 arm/arm64: smccc: Make function identifiers an unsigned quantity
+883a91d firmware/psci: Expose SMCCC version through psci_ops
+56d3797 firmware/psci: Expose PSCI conduit
+196d041 arm64: KVM: Add SMCCC_ARCH_WORKAROUND_1 fast handling
+c9ae3d5 arm64: KVM: Report SMCCC_ARCH_WORKAROUND_1 BP hardening support
+142cfd6 arm/arm64: KVM: Turn kvm_psci_version into a static inline
+c482a24 arm64: KVM: Make PSCI_VERSION a fast path
+6681f3c arm/arm64: KVM: Advertise SMCCC v1.1
+4b1713f arm/arm64: KVM: Implement PSCI 1.0 support
+54faafb arm/arm64: KVM: Add smccc accessors to PSCI code
+33e6484 arm/arm64: KVM: Add PSCI_VERSION helper
+8b106af arm/arm64: KVM: Consolidate the PSCI include files
+e06ea9a arm64: KVM: Increment PC after handling an SMC trap
+6df8d16 arm64: Branch predictor hardening for Cavium ThunderX2
+bad52d7 arm64: Implement branch predictor hardening for affected Cortex-A CPUs
+4bcf61f arm64: cpu_errata: Allow an erratum to be match for all revisions of a core
+04b4cc6 arm64: cputype: Add missing MIDR values for Cortex-A72 and Cortex-A75
+34dc20b arm64: entry: Apply BP hardening for suspicious interrupts from EL0
+e7c3b24 arm64: entry: Apply BP hardening for high-priority synchronous exceptions
+9327f06 arm64: KVM: Use per-CPU vector when BP hardening is enabled
+09ea80a mm: Introduce lm_alias
+bfaccecc arm64: Move BP hardening to check_and_switch_context
+4732001 arm64: Add skeleton to harden the branch predictor against aliasing attacks
+20bcfe0 arm64: Move post_ttbr_update_workaround to C code
+965924e arm64: Factor out TTBR0_EL1 post-update workaround into a specific asm macro
+6289541 drivers/firmware: Expose psci_get_version through psci_ops structure
+92e7a83 arm64: cpufeature: Pass capability structure to ->enable callback
+3c31fa5 arm64: Run enable method for errata work arounds on late CPUs
+93f339e arm64: cpufeature: __this_cpu_has_cap() shouldn't stop early
+4504c5c arm64: uaccess: Mask __user pointers for __arch_{clear, copy_*}_user
+4c03928 arm64: uaccess: Don't bother eliding access_ok checks in __{get, put}_user
+346edd6 arm64: uaccess: Prevent speculative use of the current addr_limit
+f3ed64a arm64: entry: Ensure branch through syscall table is bounded under speculation
+891bea9 arm64: Use pointer masking to limit uaccess speculation
+c910086 arm64: Make USER_DS an inclusive limit
+27eeced arm64: move TASK_* definitions to <asm/processor.h>
+d89be00 arm64: Implement array_index_mask_nospec()
+afc0954 arm64: barrier: Add CSDB macros to control data-value prediction
+cacf021 radeon: hide pointless #warning when compile testing
+b951ffb perf/core: Fix use-after-free in uprobe_perf_close()
+57ce7d4 perf intel-pt: Fix timestamp following overflow
+2c1f44b perf intel-pt: Fix error recovery from missing TIP packet
+6a33036 perf intel-pt: Fix sync_switch
+aad2ad6 perf intel-pt: Fix overlap detection to identify consecutive buffers correctly
+6408066 Drivers: hv: vmbus: do not mark HV_PCIE as perf_device
+68401e8 parisc: Fix out of array access in match_pci_device()
+394a9a7 media: v4l2-compat-ioctl32: don't oops on overlay
+
+   * vendor/nxp/opensource/packages/apps/Nfc/
+ffaea6a Look for libnqp61-jcop-kit.so in the vendor
+
+   * vendor/samsung/
+1ca40b9 star: initial import
+
