@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <starlte>
-            <Filename>RR-O-v6.0.0-20180427-starlte-Official.zip</Filename>
+            <Filename>RR-O-v6.0.0-20180501-starlte-Official.zip</Filename>
             <LatestBuildUrl
                 id="latestbuild"
                 title="Latest Build"
-                description="Download Latest Build">http://downloads.resurrectionremix.com/starlte/RR-O-v6.0.0-20180427-starlte-Official.zip</LatestBuildUrl>
+                description="Download Latest Build">http://downloads.resurrectionremix.com/starlte/RR-O-v6.0.0-20180501-starlte-Official.zip</LatestBuildUrl>
             <BuildUrl
                 id="build"
                 title="Build"
@@ -14,14 +14,14 @@
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View Changelogs">https://github.com/msdx321/RR-OTA/blob/master/RR-O-v6.0.0-20180427-starlte-Official-Changelog.txt</ChangelogUrl>
+                description="View Changelogs">https://github.com/msdx321/RR-OTA/blob/master/RR-O-v6.0.0-20180501-starlte-Official-Changelog.txt</ChangelogUrl>
 	</starlte>
         <star2lte>
-            <Filename>RR-O-v6.0.0-20180427-star2lte-Official.zip</Filename>
+            <Filename>RR-O-v6.0.0-20180501-star2lte-Official.zip</Filename>
             <LatestBuildUrl
                 id="latestbuild"
                 title="Latest Build"
-                description="Download Latest Build">http://downloads.resurrectionremix.com/star2lte/RR-O-v6.0.0-20180427-star2lte-Official.zip</LatestBuildUrl>
+                description="Download Latest Build">http://downloads.resurrectionremix.com/star2lte/RR-O-v6.0.0-20180501-star2lte-Official.zip</LatestBuildUrl>
             <BuildUrl
                 id="build"
                 title="Build"
@@ -29,7 +29,7 @@
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View Changelogs">https://github.com/msdx321/RR-OTA/blob/master/RR-O-v6.0.0-20180427-star2lte-Official-Changelog.txt</ChangelogUrl>
+                description="View Changelogs">https://github.com/msdx321/RR-OTA/blob/master/RR-O-v6.0.0-20180501-star2lte-Official-Changelog.txt</ChangelogUrl>
 	</star2lte>
     </Stable>
 </SlimOTA>
