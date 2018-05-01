@@ -1,0 +1,527 @@
+
+ ▼ Resurrection Remix Oreo Ver 6.0.0 Changelog
+
+
+====================
+     05-02-2018
+====================
+
+
+   * device/samsung/star-common/
+ac1c538 star: Lower the boost value on interaction
+46a5320 star: Tune sched/cpuset a bit
+f686cdb star: Tune the filesystem on boot
+30c2ac7 Revert "star: overlay: use stock navbar button layout by default"
+8a47b8d star: Add RR support
+
+   * frameworks/av/
+83673604f libstagefright: Add more sample rates for FLAC
+
+   * frameworks/base/
+36b1d4e1a0e HAX: Force maxAspectRatio to 2.1
+b2145df6a7e SystemUI: fix build after a90d449c4c7cd55cc45205137f7ba6c4b2edfeba
+ba62014fe6d Merge remote-tracking branch 'bdogg718k/oreo' into oreo
+
+   * hardware/lineage/interfaces/
+6945c7d livedisplay: Make hsic structs internal
+f9ce129 livedisplay: Don't unnecessarily call new
+67f1d5a livedisplay: Move SDMController helper functions to anonymous namespace
+3df1fcd livedisplay: Move Color helper functions to anonymous namespace
+46a6cf1 livedisplay: Avoid useless sprintf
+0fc93fd livedisplay: Replace defines with enums and constexpr
+aeb3428 livedisplay: Switch to stream.fail
+f747017 livedisplay: Avoid 'using ::std' in Utils
+98adb03 livedisplay: Remove unused exists helper function
+
+   * kernel/samsung/universal9810/
+7a753fc4b0b9 lib: vdso: add support for time
+3eaa5af346a2 lib: vdso: do not expose gettimeofday, if no arch supported timer
+50648ca0741d lib: vdso: Add support for CLOCK_BOOTTIME
+3419153b956f arm64: vdso: replace gettimeofday.S with global vgettimeofday.C
+83bcdebe5aef arm: vdso: move vgettimeofday.c to lib/vdso/
+a458296ac5e7 sched: ehmp: use existing scheduler functions
+7a7936503c16 generic_wakelock_blocker: Rename qcom_rx_wakelock to wlan_rx_wake
+7e5f3f2f871a star: Enable boeffla wakelock blocker
+a1aaf1c1fa72 boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
+21d8b7265c83 boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
+a8c65bf6eab7 boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0
+9c699ab4d086 star: Enable BFQ
+5867a5ccc8ef Turn into BFQ-v8r7 for 4.9.0
+8565a97aa908 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r11 for 4.5.0
+673a4d85d54d block: introduce the BFQ-v7r11 I/O sched for 4.5.0
+f70d4cd01fec block: cgroups, kconfig, build bits for BFQ-v7r11-4.5.0
+822705f843e1 Revert "star: Switch to new block-mq model"
+d4ced157dfee sched: WALT: fix window mis-alignment
+a897cd68108a sched: EAS: kill incorrect nohz idle cpu kick
+42369ce2d0a8 sched: EAS/WALT: Don't take into account of running task's util
+7bc7cddc8f8c sched: EAS/WALT: take into account of waking task's load
+09a6b4849989 sched: EAS: upmigrate misfit current task
+b4ca38bdc7a0 sched: avoid pushing tasks to an offline CPU
+9a761426f935 sched: Extend active balance to accept 'push_task' argument
+45414a3b6347 sched: EAS/WALT: finish accounting prior to task_tick
+fe564d546a35 sched/fair: prevent meaningless active migration
+1fbd4702a7cb BACKPORT: schedutil: Reset cached freq if it is not in sync with next_freq
+2ebeda107535 Merge remote-tracking branch 'aosp/android-4.9-o' into oreo
+
+   * packages/apps/Settings/
+9ff6c7332c Merge remote-tracking branch 'github/oreo' into oreo
+11d7d5ae4d Settings: Move substratum strings to right place (#947)
+9704e07615 Add Samsung A5 2017 & A7 2017 (a[5,7]y17lte) (#953)
+683a066e70 Add Redmi 4A (rolex) (#955)
+341f816bbc Merge remote-tracking branch 'bdogg718k/oreo' into oreo
+
+====================
+     05-01-2018
+====================
+
+
+   * build/make/
+f8d9a1fbf Merge remote-tracking branch 'rr/oreo' into HEAD
+53154baf5 releasetools: ota_from_target_files: add FullOTA_PostValidate
+e4d09f339 build: Remove duplicate zip command
+
+   * device/qcom/sepolicy/
+43a2cc0 Merge remote-tracking branch 'rr/oreo' into oreo
+59c5667 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * device/rr/sepolicy/
+05ada16 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * device/samsung/star-common/
+f19828f star: power: use Samsung API for cpu hotplugging and limitation
+049a449 star: decouple Interactive and AutoSuspend from display
+e2cb915 star: enable ADB authentication
+226bb44 star: use clang to compile kernel
+dc09bad star: add power HAL
+
+   * frameworks/base/
+43ead6dbfa4 Merge pull request #1 from bdogg718k/oreo-markup
+a90d449c4c7 finally fix up source for good
+11aafaf408f Revert "Ambient and statusbar media tickers: code fixes and improvements"
+a00ee6ed3c0 Revert "Clean-up merge and make small fix"
+8112a3e84f8 Revert "Extra space..not needed"
+a0b58a80234 Revert "fix some derps"
+c491361382a fix some derps
+cdc0a596205 Choose a custom editor app for screenshot notification edit button [1/2]
+d0cab38fb86 Screenshot: add "Markup" edit action support
+
+   * frameworks/native/
+ed729d1cb Merge branch 'oreo' of https://github.com/ResurrectionRemix/frameworks_native into oreo
+ebc6433c3 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * hardware/lineage/interfaces/
+0d11531 livedisplay: Make ColorBackend a regular object
+
+   * kernel/samsung/universal9810/
+c5baa05db2b4 Revert "star: disable input booster"
+da8dfbabc8e3 Merge 4.9.97 into android-4.9-o
+56abdba9b1dd star: Switch to clang
+d09107af0b46 DO-NOT-UPSTREAM arm64, LLVMLinux: prfm
+4a25949167c4 FROMLIST: kbuild: clang: fix build failures with sparse check
+f3922f4d8a4b ANDROID: HACK: arm64: use -mno-implicit-float instead of -mgeneral-regs-only
+9789e8e26cd2 ANDROID: Kbuild, LLVMLinux: allow overriding clang target triple
+5fdeebd32a37 CHROMIUM: arm64: Disable asm-operand-width warning for clang
+cee339a1c3ff CHROMIUM: kbuild: clang: Disable the 'duplicate-decl-specifier' warning
+641488f42540 BACKPORT: x86/asm: Fix inline asm call constraints for Clang
+e2d3b80c7120 BACKPORT: efi/libstub/arm64: Set -fpie when building the EFI stub
+fd63f38c1bea UPSTREAM: efi/libstub/arm64: Force 'hidden' visibility for section markers
+9445ddc5c271 UPSTREAM: efi/libstub/arm64: Use hidden attribute for struct screen_info reference
+5d77dd98c77d UPSTREAM: x86/build: Use cc-option to validate stack alignment parameter
+9e933eddfd75 UPSTREAM: x86/build: Fix stack alignment for CLang
+173e54f0c2f4 UPSTREAM: compiler, clang: always inline when CONFIG_OPTIMIZE_INLINING is disabled
+2d649241b477 UPSTREAM: x86/boot: #undef memcpy() et al in string.c
+1edf9ffcd842 UPSTREAM: crypto: arm64/sha - avoid non-standard inline asm tricks
+ee550eb8d1ab UPSTREAM: kbuild: clang: Disable 'address-of-packed-member' warning
+3ad821e1787c UPSTREAM: x86/build: Specify stack alignment for clang
+cc25f1a6ceb1 UPSTREAM: x86/build: Use __cc-option for boot code compiler options
+d17101746661 UPSTREAM: kbuild: Add __cc-option macro
+afc3211d4bdb UPSTREAM: crypto, x86: aesni - fix token pasting for clang
+e65b61846763 UPSTREAM: x86/kbuild: Use cc-option to enable -falign-{jumps/loops}
+a3e20a0d6c1e UPSTREAM: compiler, clang: suppress warning for unused static inline functions
+061c72aa6156 UPSTREAM: modules: mark __inittest/__exittest as __maybe_unused
+336c24e06daf UPSTREAM: kbuild: Add support to generate LLVM assembly files
+29a2ebb70f18 UPSTREAM: kbuild: use -Oz instead of -Os when using clang
+bbf87047c621 UPSTREAM: kbuild, LLVMLinux: Add -Werror to cc-option to support clang
+2282e352b8a0 UPSTREAM: kbuild: drop -Wno-unknown-warning-option from clang options
+25ed862cdca5 UPSTREAM: kbuild: fix asm-offset generation to work with clang
+3765fe93ef66 UPSTREAM: kbuild: consolidate redundant sed script ASM offset generation
+cc8f1cdd372e UPSTREAM: kbuild: Consolidate header generation from ASM offset information
+c103f30bc637 UPSTREAM: kbuild: clang: add -no-integrated-as to KBUILD_[AC]FLAGS
+1de10023a1ac UPSTREAM: kbuild: Add better clang cross build support
+7a700113920c UPSTREAM: arm64: compat: Remove leftover variable declaration
+
+   * packages/apps/Settings/
+356ba2a83c Change Mi 5s maintainer (#941)
+528dd9017b Add Redmi Note 5 Pro (Whyred)
+c4c1f90e00 Merge pull request #1 from bdogg718k/oreo-markup
+2bd2495dbe fix ANOTHER derp
+e81a0de9b1 Choose a custom editor app for screenshot notification edit button [2/2]
+
+   * system/core/
+19ec7aaff Merge branch 'oreo' of https://github.com/ResurrectionRemix/system_core into HEAD
+2e64d4089 Merge branch 'lineage-15.1' into HEAD
+
+   * system/sepolicy/
+3877083c Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_system_sepolicy into HEAD
+b4987748 Merge branch 'lineage-15.1' into HEAD
+
+   * vendor/rr/
+619b1b44 Merge branch 'oreo' into HEAD
+480bf412 Fix migration from pre-O for AndroidTV devices (2/2)
+7f6970a1 Add Nvidia enhancements soong flag
+7ac3d957 lineage: qcom: Enable media extensions for all QC devices
+7ee16263 soong_config: Add TARGET_HAS_LEGACY_CAMERA_HAL1 variable
+a83e239d apn: Update APNs for MetroPCS
+
+====================
+     04-30-2018
+====================
+
+
+   * build/make/
+14060e559 releasetools: ota_from_target_files: add FullOTA_PostValidate
+02f6b03d9 build: Remove duplicate zip command
+5f86b3db2 Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_build into oreo
+
+   * device/qcom/sepolicy/
+03541c8 Escape '.' character
+032115b sepolicy: Remove leftover folders
+
+   * device/samsung/star-common/
+a56287b star: enable proximity check on screen wake
+5844b7c star: usb: add adb-only configuration
+b07b186 star: enable ZRAM
+ab80a44 star: adjust default schedtune settings
+
+   * frameworks/base/
+56fb9ac3117 Fix auto fill on themes
+9b1f35e78b4 Fix migration from pre-O for AndroidTV devices (1/2)
+f623987c5d2 SystemUI: Dismiss keyguard on boot if disabled by current profile
+8159111cd37 Extra space..not needed
+ea519891834 Allow to quickly open Running Services from QS panel [1/2]
+11d5eb9e481 Clean-up merge and make small fix
+3eef02b3058 Ambient and statusbar media tickers: code fixes and improvements
+91ad0fe2198 Ambient music ticker improvements
+4d1e0fe17f9 SystemUI: use slashify for more qs tile
+d61fb30ed5d Add interpolators to qs tiles animation [1/2]
+3984d28c221 Add animations to quick settings tiles [1/2]
+eca9eaf77a6 Hide tiles title: longpress will launch detail view
+39a4e09fe7e Footer brightness buttons: make touch area more reliable
+c8e3eccc0f5 QS auto brightness toggle rework
+0605132f59c Rework auto brightness implementation
+ad7426e2a11 Brightness slider: Vibrate after a long press
+79416da4674 Brightness slider buttons: make them dynamic (auto and manual)
+5c99250521f Footer brightness slider: fix FC and code cleanup
+c59d1facbca Make use of the brightness slider buttons
+d12a1fcb98b Brightness control on footer
+520dba221cf Clean-up code
+2c75196cc29 BoostFramework: Remove debug boost prop dependency
+4a05f9ece9c Activity: Improve DragBoost logic
+953680827da Introduce Rotation Boost
+466ec322a18 Rework AOSPA boosting configuration
+a805f0628f7 UserController: Introduce Bootup Boost
+18257906556 Keypress Boost: Improve dispatching logic
+4a1ec634e35 Keypress Boost: Block multiple Keypress boosts
+b69db589865 Introduce Keypress Boost
+058b9860f41 Fix boost issue caused by pre-fling
+108992c2d62 boost ahead of current fling boost in scroll
+e03942b813b Framework for LaunchBoost v2 and Frequency aggr during launch.
+170aaf07578 BoostFramework: Implement asynchronous processing of perflocks
+8c93ba3f364 Add synchronized protection in BoostFramework constructor
+6bd340f9c99 frameworks: Add custom boost for scroll/fling
+068f0c51477 Perf: Adding hooks for IO prefetcher into framework
+8eeea864f66 BoostFramework to enhance performance during critical scenarios
+69a8b381bdd Smart Pixels: Switch to registered receiver
+a8444f8a05a Move Smart Pixels out of SystemUI
+28b6958d17d SystemUI: Refactor Smart Pixels tile
+3341c279967 SystemUI: Tiny expanding improvement
+ae4c2a203f0 Notifications: Materialize missed calls icons
+de8a3e55e01 spinner: make the loading "spinner" animation smoother in non-holo apps
+e6c96bd78f8 Decrease time changing between TOP & another state
+6e48049c022 Add permission whitelist for EmergencyInfo app
+02808526bb9 hwui: check the buffer status before draw
+7907e19b431 ConnectivityService doesn't send decreased score to factories at need
+24dbb8f5c3e Stop ticker on theme changes
+5799522e0ba media/jni: Check mute state before starting play
+aea0f35f47a PackageManager: Init known locales at WelcomeActivity in SetupWizard
+1a7a410b314 Use async thread for performPoll in NetworkStats
+0cfed05f1bd AtomicFile: Rename the backup file to base file when backup exists
+8628e9e6fed Fix issue when start android/com.android.internal.backup.LocalTransportService
+88534b65d22 Make the allPendingIntents add operation thread-safe
+a80200de2c3 Improve a calculation method for LTE antenna reception level
+f1e77437fea Fix InCallActivity onStop call when launch from Lockscreen
+d9ac2732858 Send broadcast to MediaScannerReceiver to refresh gallery
+79d01bb2d1d Should use scan flag or it will not scan device
+cac10a65b94 base: recents: protect against possible concurrent mod
+073d3dd3894 Fix NullPointerException on systemui restart with smart pixel enabled.
+0da39e13209 TaskViewHeader:Don't allow lock button icon to show on grid view
+64b74978079 [1/2] base: featureize ro.recents.grid
+e76e00a1199 Crash occured due to null pointer exception.
+7c356f2c6cd Suppress FingerprintManager logspam
+182061e7d90 Silence camera policy keyguard check logspam
+bff063f727a  Kill off provider info logspam
+5351adb410d Fix AccessibilityNodeInfo memory leak
+43e4097c60c Kill net stats logspam
+6a23c0356a6 Fix some refresh issues when changing an overlay
+5f26d083b06 SystemUI: Add Smart Pixels tile
+997760f7646 SystemUI: update QS Footer animations
+a5ba7604b6f SystemUI: QS footer visibilities [1/2]
+92cf7edabb2 PIE: Use vector tile icons
+0f20679f81c PIE: Hide network type if wifi is enabled
+afae85f023c Recents: Tint membar to accent if recents styles are disabled
+7043b607298 Add RR logo to empty recents view - Change No recents string to RR Remixed - Both logo and text will change with system accent colors
+d513520f3cf NetworkDiagnostics: switch to Cloudflare DNS
+8a55c9953d3 Use Cloudflare DNS servers as hints
+49e38448be7 Use Cloudflare DNS servers as defaults for tethering
+71432957eca Use Cloudflare DNS as the default fallback
+753cbf2b438 Set BT_SCO status
+02222d7f3d3 Add NOTICE for SmartPixels
+4695fdc93db SystemUI: Smart Pixels [1/2]
+
+   * frameworks/native/
+41f56a853 Triple the available egl function pointers available to a process for certain Nvidia devices.
+3019fea70 Handle glGetString returning NULL
+
+   * frameworks/opt/telephony/
+982d5ade7 DcTracker: Change access modifier of isNvSubscription to protected
+
+   * hardware/lineage/interfaces/
+724ca6d livedisplay: Fully qualify STL types in headers
+284a9cc livedisplay: Don't assign -1 to uint64_t
+0d40479 livedisplay: SDM: Don't advertise color balance support
+95096b0 livedisplay: Add missing break statement
+65f77a4 livedisplay: Use GetBoolProperty
+
+   * hardware/qcom/audio-caf/msm8998/
+7ee810ce8 msm8998: hal: Update ultrasound route hacks
+
+   * kernel/samsung/universal9810/
+ba3cd5796223 Linux 4.9.97
+4959a913ef6b ACPI / video: Only default only_lcd to true on Win8-ready _desktops_
+bed2d7627a9d s390/uprobes: implement arch_uretprobe_is_alive()
+a714a5f3afdd s390/dasd: fix IO error for newly defined devices
+04f87299884a s390/cio: update chpid descriptor after resource accessibility event
+4bd744b86114 cdrom: information leak in cdrom_ioctl_media_changed()
+70f2351eca53 scsi: mptsas: Disable WRITE SAME
+2f7be1262873 strparser: Fix incorrect strp->need_bytes value.
+e2956fc83565 ipv6: add RTA_TABLE and RTA_PREFSRC to rtm_ipv6_policy
+55ca7b1d43a9 net: af_packet: fix race in PACKET_{R|T}X_RING
+228ce13c3064 tcp: md5: reject TCP_MD5SIG or TCP_MD5SIG_EXT on established sockets
+581cb195c59f net: fix deadlock while clearing neighbor proxy table
+b031b84f3c39 net: ethernet: ti: cpsw: fix tx vlan priority mapping
+7b80c1687148 llc: fix NULL pointer deref for SOCK_ZAPPED
+90e19ec22499 llc: hold llc_sap before release_sock()
+e5d0f6a6935a net: sched: ife: signal not finding metaid
+2de74b91a85e sctp: do not check port in sctp_inet6_cmp_addr
+9d33bfffd39b vlan: Fix reading memory beyond skb->tail in skb_vlan_tagged_multi
+ecaae08d72bd pppoe: check sockaddr length in pppoe_connect()
+0b6693b49e4d tipc: add policy for TIPC_NLA_NET_ADDR
+b2a5207f8c45 packet: fix bitfield update race
+8599a1fe10b8 team: fix netconsole setup over team
+3626fb04d050 team: avoid adding twice the same option to the event list
+f838259677f3 tcp: don't read out-of-bounds opsize
+e202fa9ea5a3 llc: delete timers synchronously in llc_sk_free()
+0e770d2927b7 net: validate attribute sizes in neigh_dump_table()
+e9c46600cdf1 l2tp: check sockaddr length in pppol2tp_connect()
+06a02a816890 KEYS: DNS: limit the length of option strings
+a43e7cba5444 bonding: do not set slave_dev npinfo before slave_enable_netpoll in bond_enslave
+037069f2c625 s390: correct module section names for expoline code revert
+906cd975f6d4 s390: correct nospec auto detection init order
+fa90b9a2b63e s390: add sysfs attributes for spectre
+4a51204f8b38 s390: report spectre mitigation via syslog
+3e17958c6b31 s390: add automatic detection of the spectre defense
+2afb4e9dfc0a s390: move nobp parameter functions to nospec-branch.c
+7634817fc5fa s390/entry.S: fix spurious zeroing of r0
+7ae60d00c31e s390: do not bypass BPENTER for interrupt system calls
+49a48a0ec7c1 s390: Replace IS_ENABLED(EXPOLINE_*) with IS_ENABLED(CONFIG_EXPOLINE_*)
+2a0b0e13a8de KVM: s390: force bp isolation for VSIE
+24fbc4eee899 s390: introduce execute-trampolines for branches
+a1f44e7917a6 s390: run user space and KVM guests with modified branch prediction
+07f65a834a81 s390: add options to change branch prediction behaviour for the kernel
+46bd2c0ffd5c s390/alternative: use a copy of the facility bit mask
+2dcf46aa49ac s390: add optimized array_index_mask_nospec
+c225febe980f s390: scrub registers on kernel entry and KVM exit
+4d9c2b611ff2 KVM: s390: wire up bpb feature
+420fd816bd20 s390: enable CPU alternatives unconditionally
+d69aa5e682c3 s390: introduce CPU alternatives
+c8b1584e5e37 PCI: Wait up to 60 seconds for device to become ready after FLR
+237b5a362399 Revert "ath10k: send (re)assoc peer command when NSS changed"
+b5145685a8bb Revert "pinctrl: intel: Initialize GPIO properly when used through irqchip"
+403e7bd6ed4a r8152: add Linksys USB3GIGV1 id
+21670a464c6b mac80211_hwsim: fix use-after-free bug in hwsim_exit_net
+2d1264b5e665 drm/i915/bxt, glk: Increase PCODE timeouts during CDCLK freq changing
+9ffa6fb2583b RDMA/mlx5: Fix NULL dereference while accessing XRC_TGT QPs
+9acdfe4eecf2 perf: Return proper values for user stack errors
+ac6f0cb331e2 perf: Fix sample_max_stack maximum check
+fdc2090bdadf Revert "perf tools: Decompress kernel module when reading DSO data"
+cff3a5f282ff jbd2: fix use after free in kjournald2()
+ff738afb8a84 ath9k_hw: check if the chip failed to wake up
+faf6fd7539a1 OF: Prevent unaligned access in of_alias_scan()
+d539f0aa5d1c stk-webcam: fix an endian bug in stk_camera_read_reg()
+f9437fa5d27b power: supply: bq2415x: check for NULL acpi_id to avoid null pointer dereference
+98b62bd6823d Input: drv260x - fix initializing overdrive voltage
+5955f16e49ec MIPS: Generic: Fix big endian CPUs on generic machine
+4dcd6ce1dff4 usb: musb: Fix external abort in musb_remove on omap2430
+9e565114f4bc usb: musb: call pm_runtime_{get,put}_sync before reading vbus registers
+c274101cd18b usb: musb: fix enumeration after resume
+bd8505f3f3d4 i2c: i801: Restore configuration at shutdown
+53defab7a561 i2c: i801: Save register SMBSLVCMD value only once
+fbd45e2957fb i2c: i801: store and restore the SLVCMD register at load and unload
+9c87602abe12 drm/i915: Fix LSPCON TMDS output buffer enabling from low-power state
+5ddab9f7be78 drm/vc4: Fix memory leak during BO teardown
+01eabcde1be5 x86/tsc: Prevent 32bit truncation in calc_hpet_ref()
+193038d913f4 cifs: do not allow creating sockets except with SMB1 posix exensions
+dfb28754ae03 star: Fix permission for build scripts
+b5f83604ddc1 star: Switch to new block-mq model
+23e8b129872a scripts: Don't append '+' for short local version
+afe9528395a7 star: Set local version to ResurrectionRemix
+0521853c3d54 star: Kill zswap
+d965c6c5bf2b star: No advanced TCP congs
+1f9d7d72866f star: Use power_efficient_wq by default
+460664d6fb41 workqueue: Make power_efficient_wq tunable
+6aa6d56a2292 star: Skip kernel's sys_sync() on suspend to RAM/standby
+3f795bc502db star: Disable KSM
+f95790a0a759 starlte: Update .gitignore
+00fe2bddfaa4 star: Using my own script
+17c650aa6b26 star: disable input booster
+
+   * lineage-sdk/
+c0178e4 LineageBatteryLights: Fix brightness for devices with segmented leds
+547fe4e LineageBatteryLights: Take current user settings into account
+af89b21 LineageBatteryLights: Rename some class members and add more debugging
+
+   * packages/apps/Settings/
+31ed359781 Settings: Hide Night Mode suggestion if LiveDisplay feature is present
+76c4579d72 Allow to quickly open Running Services from QS panel [2/2]
+cd65896db2 DUI Fling: allow to reset options and save/restore actions profile
+0bf7fb5ecc DUI custom actions: compatibility for Tasker and other activities
+23c45ec6d1 PackageListAdapter: show more apps in the list
+a69e062144 Add interpolators to qs tiles animation [2/2]
+111eb29a94 Add animations to quick settings tiles [2/2]
+8bd66c1c0f Settings:Optional recents lock icon switch
+10a6c5bf04 Recents grid switch
+f8f8598ebc Settings: External Smart Pixels fragment launch
+caf27f32e5 Settings: QS footer visibilities [2/2]
+58140f838f SimSettings: avoid NPE
+2a246efae0 Settings: SmartPixels [2/2]
+
+   * packages/overlays/Resurrection/
+3a8c489 Fix auto fill on themes
+
+   * system/core/
+5246a1de0 init: Don't run update_sys_usb_config if /data isn't mounted
+19782f6d6 init: do not load persistent properties from temporary /data
+
+   * system/sepolicy/
+30dd7c99 Hide some denials.
+2f44f117 priv_app: suppress denials for /proc/stat
+2e69a64f Suppress denials for non-API access
+a1a32c85 priv_app: move logspam suppression to core policy
+d7b99261 Suppress denials from sdcardfs (b/67454004)
+fff4270e Allow system_server to update timerslack_ns for hal_audio_default
+9404b36d system_server: allow writing to timerslack_ns
+f49c222f Adapt add_service uses for TARGET_HAS_LEGACY_CAMERA_HAL1
+7dc6d1c0 Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
+
+   * vendor/rr/
+95778c67 Fix migration from pre-O for AndroidTV devices (2/2)
+07cdc54e Add Nvidia enhancements soong flag
+0cbb815b lineage: qcom: Enable media extensions for all QC devices
+2a75b318 soong_config: Add TARGET_HAS_LEGACY_CAMERA_HAL1 variable
+9f88309b apn: Update APNs for MetroPCS
+
+====================
+     04-29-2018
+====================
+
+
+   * frameworks/base/
+c78e942d645 SystemUI: screen-dimmer-pixel-filter
+
+   * hardware/qcom/audio-caf/msm8998/
+daba72511 msm8998: ultrasound: Initial open source hal for Elliptic Ultrasound
+
+   * system/core/
+7fbd2ba75 init: Don't run update_sys_usb_config if /data isn't mounted
+32de60cae init: do not load persistent properties from temporary /data
+
+====================
+     04-28-2018
+====================
+
+
+   * device/rr/sepolicy/
+ea92881 sepolicy: qcom: Allow nfc to read and execute files in /vendor on full treble
+
+   * device/samsung/star2lte/
+5d83979 starlte: Add RR support
+
+   * kernel/samsung/universal9810/
+f8b3dc263154 star: defconfig: sync
+3b704afb6b2a Merge remote-tracking branch 'android/common/android-4.9-o' into lineage-15.1
+20def2b7f4dc Merge remote-tracking branch 'android/common/android-4.9-o' into lineage-15.1
+950cd560393b star: use optimize for performance
+
+====================
+     04-27-2018
+====================
+
+
+   * frameworks/native/
+82b235862 Triple the available egl function pointers available to a process for certain Nvidia devices.
+
+   * kernel/samsung/universal9810/
+bae7c2183b43 Revert "dma-buf/sw-sync: Use an rbtree to sort fences in the timeline"
+38101398d6db Merge commit '2007563049bf6fcb6aea5d30f6f54b1058291c05' into lineage-15.1
+145f4d284782 universal9810: remove dependencies on platform version
+46220f7dcf7f battery: sec_battery: export {CURRENT/VOLTAGE}_MAX to sysfs
+ea87c5ddf7fc motor: sec_haptic: set max intensity to 800
+e441595fba61 input: sec_ts: bind input_open/close to display state
+c3e3a2ed84af star: add kernel build script
+fcabd512bb04 star: set DTS_NAME
+1127b294a0d1 arm64: exynos: introduce EXYNOS_DTS_NAME variable
+fd8365d4613f star: disable Samsung MTP
+7d9b015aed40 drivers: usb: add separated Samsung MTP option
+5efd8e0c9108 universal9810: Merge G960FXXU1ARCC/G965FXXU1ARCC Sources
+
+====================
+     04-26-2018
+====================
+
+
+   * device/rr/sepolicy/
+956eaed Revert "sepolicy: suppress denial logspam"
+
+   * device/samsung/star-common/
+9c57ce9 star: releasetools: Run resize2fs on /system partition
+6fbcbb1 star: overlay: apply padding for rounded corner
+92999db Revert "star: overlay: apply padding for rounded corner"
+43a4579 star: overlay: use stock navbar button layout by default
+8b015c1 Revert "star: overlay: use stock navbar button layout by default"
+
+   * device/samsung/starlte/
+98de601 starlte: Set density to 560
+c6d11aa starlte: Add RR support
+eeb80d5 starlte: correct density to 640
+
+   * frameworks/base/
+76ef8b0a2d6 Revert "Fw_base - custom Toast color options (1/2)"
+
+   * frameworks/native/
+e9188d034 Handle glGetString returning NULL
+
+   * frameworks/opt/telephony/
+ea4a8e218 Fix Acess modifiers as part of extending ServicestateTracker.
+
+   * packages/apps/Settings/
+86b0583d25 Revert "Settings - custom Toast color options (2/2)"
+
+   * system/sepolicy/
+21d60b89 Hide some denials.
+217abd24 priv_app: suppress denials for /proc/stat
+a5534feb Suppress denials for non-API access
+9b69af18 priv_app: move logspam suppression to core policy
+dec50d77 Suppress denials from sdcardfs (b/67454004)
+d1f40abb Allow system_server to update timerslack_ns for hal_audio_default
+bd7d7332 system_server: allow writing to timerslack_ns
+
