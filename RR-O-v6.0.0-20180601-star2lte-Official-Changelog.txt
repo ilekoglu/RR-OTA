@@ -1,0 +1,207 @@
+
+ ▼ Resurrection Remix Oreo Ver 6.0.0 Changelog
+
+
+====================
+     06-01-2018
+====================
+
+
+====================
+     05-31-2018
+====================
+
+
+   * packages/apps/Eleven/
+d378526 Eleven: Catch unsupported bitmap exception
+
+   * packages/providers/ContactsProvider/
+44ba9b91 CallLogDatabase: Bump the version and try to re-run the version 5 upgrade path
+
+====================
+     05-30-2018
+====================
+
+
+   * device/samsung/star-common/
+5afe19d star: overlay: enable option for full screen aspect ratio
+
+   * frameworks/base/
+
+   * kernel/samsung/universal9810/
+6d05d598c7ef star: Use my own scripts
+
+   * packages/apps/Settings/
+7815df066b Rom about update
+
+   * vendor/samsung/
+997d34fe zero: Remove fingerprint.default blob
+a4ecb8f6 zero: Remove prebuilt fingerprintd
+4672e188 zero: Remove SOMX
+c2bd4d55 zero: Squashed Update For O
+
+====================
+     05-29-2018
+====================
+
+
+   * packages/apps/Settings/
+0cd8ac0cf3 Merge pull request #959 from root2raj/oreo
+
+====================
+     05-28-2018
+====================
+
+   * android/
+cb480ca Add Jelly back (#118)
+
+   * packages/apps/Settings/
+7faf108a63 Fix ScreenShot Editor APP FC
+b00f05fad9 Merge pull request #965 from LMMFHHO/oreo
+
+====================
+     05-27-2018
+====================
+
+
+   * hardware/qcom/audio-caf/msm8996/
+bf635eae9 qcom-audio: Fixes for VNDK_VERSION=current
+f52e4631b Add libhardware_headers and libsystem_headers to modules
+7f8f618e5 Make libqcomvoiceprocessing build with the VNDK.
+acdb6be5b Make libqcomvisualizer build with the VNDK.
+fa595db1f Make libqcompostprocbundle build with the VNDK.
+50a2bf65b Build audio.primary.* with BOARD_VNDK_VERSION
+
+   * hardware/qcom/display-caf/msm8996/
+cde9bfae0 libqdutils: Fix for VNDK_VERSION=current
+74965a3a2 Build libdisplayconfig with VNDK
+34eb94876 Add GLESv3 as a dependency.
+a177cc4ba Fix libcutils private headers
+8378513a9 Build libqdMetaData with BOARD_VNDK_VERSION
+0e995bc9a Build lights.msm8996 with the VNDK.
+e63a93bcf Use header lib instead of using global include path
+c7093348e Mark msm8996 modules LOCAL_VENDOR_MODULE
+
+   * hardware/qcom/media-caf/msm8996/
+3a79c5c6e vdec: Fixes for VNDK_VERSION=current
+153c03933 Build libOmxVdec and libOmxVenc with BOARD_VNDK_VERSION
+8d8553b51 Build libstagefrighthw with BOARD_VNDK_VERSION
+a8471c71e Add libutils to msm8996 modules
+
+   * hardware/qcom/wlan-caf/
+0a42dd7 Make wcnss_service build with the VNDK.
+
+   * packages/apps/Settings/
+09d08251a0 Merge pull request #963 from itsHardStyl3r/oreo
+
+====================
+     05-26-2018
+====================
+
+
+   * frameworks/base/
+
+   * kernel/samsung/universal9810/
+bbde588d0091 universal9810: Merge G960FXXU1BRE5/G965FXXU1BRE5 Sources
+35eb3af20025 Merge branch 'android-4.9-o' of kernel_common into HEAD
+08b055b879a9 Merge 4.9.103 into android-4.9-o
+aa4b4ace9ce0 Linux 4.9.103
+0c6004565648 rtc: tx4939: avoid unintended sign extension on a 24 bit shift
+dd6b3e0a6659 rtc: hctosys: Ensure system time doesn't overflow time_t
+36ce931c4286 rtc: snvs: Fix usage of snvs_rtc_enable
+3ac3103cd0dd serial: 8250: Don't service RX FIFO if interrupts are disabled
+561a4f4d9d4d serial: arc_uart: Fix out-of-bounds access through DT alias
+cd777719e331 serial: fsl_lpuart: Fix out-of-bounds access through DT alias
+a301f13f34b8 serial: imx: Fix out-of-bounds access through serial port index
+2e876eae4873 serial: mxs-auart: Fix out-of-bounds access through serial port index
+2803df3004f0 serial: samsung: Fix out-of-bounds access through serial port index
+4cb84bd8720e serial: xuartps: Fix out-of-bounds access through DT alias
+7c36063750f3 media: cx25821: prevent out-of-bounds read on array card
+9639854bd3b8 media: vivid: fix incorrect capabilities for radio
+28ea156b6562 media: vb2: Fix videobuf2 to map correct area
+07c41c408f32 media: s3c-camif: fix out-of-bounds array access
+9a2347ab9880 media: cx23885: Override 888 ImpactVCBe crystal frequency
+40a8962a531d media: dmxdev: fix error code for invalid ioctls
+515702e0a900 clk: samsung: exynos3250: Fix PLL rates
+a5637e4c9510 clk: samsung: exynos5250: Fix PLL rates
+8c762043010c clk: samsung: exynos5433: Fix PLL rates
+1b287c3a10d8 clk: samsung: exynos5260: Fix PLL rates
+2434a0623bcc clk: samsung: exynos7: Fix PLL rates
+c2cc0c41a7ab clk: samsung: s3c2410: Fix PLL rates
+1325a6c91a88 clk: rockchip: Prevent calculating mmc phase if clock rate is zero
+e651dc5a4002 media: cx23885: Set subdev host data to clk_freq pointer
+eaab238dbb53 clk: tegra: Fix pll_u rate configuration
+2c440ef456c2 clk: Don't show the incorrect clock phase
+f19681dfbb92 clk: rockchip: Fix wrong parent for SDMMC phase clock for rk3228
+608ae38610e6 ASoC: samsung: i2s: Ensure the RCLK rate is properly determined
+a74ae617a73b ASoC: topology: create TLV data for dapm widgets
+bdaea52d57a2 ASoC: au1x: Fix timeout tests in au1xac97c_ac97_read()
+e0d35e31c525 scsi: lpfc: Fix frequency of Release WQE CQEs
+24678510078c scsi: lpfc: Fix soft lockup in lpfc worker thread during LIP testing
+a3adc584abfb scsi: lpfc: Fix issue_lip if link is disabled
+f652149cf3cb scsi: mvsas: fix wrong endianness of sgpio api
+2272b6714065 scsi: aacraid: Insure command thread is not recursively stopped
+466a2b7ac9fb scsi: sd: Keep disk read-only when re-reading partition
+4a8907dc9fa9 scsi: mpt3sas: Do not mark fw_event workqueue as WQ_MEM_RECLAIM
+e3685f99492c scsi: qla4xxx: skip error recovery in case of register disconnect.
+3e0421562e04 scsi: aacraid: fix shutdown crash when init fails
+cd8acc46808b scsi: storvsc: Increase cmd_per_lun for higher speed devices
+4646c1af466c scsi: qla2xxx: Avoid triggering undefined behavior in qla2x00_mbx_completion()
+95bcf5b14e31 scsi: mptfusion: Add bounds check in mptctl_hp_targetinfo()
+13a3e883ce6f scsi: sym53c8xx_2: iterator underflow in sym_getsync()
+ac6572952cbb scsi: bnx2fc: Fix check in SCSI completion handler for timed out request
+9760af4d2eca scsi: ufs: Enable quirk to ignore sending WRITE_SAME command
+2c0fd4ba0587 scsi: fas216: fix sense buffer initialization
+e422d89fb59d crypto: sunxi-ss - Add MODULE_ALIAS to sun4i-ss
+86a3f2d3b758 staging: lustre: lmv: correctly iput lmo_root
+1c0344c49308 staging: rtl8192u: return -ENOMEM on failed allocation of priv->oldaddr
+602263054df7 staging: lustre: fix bug in osc_enter_cache_try
+d6f521863130 Bluetooth: btusb: Add device ID for RTL8822BE
+5104f3671139 media: em28xx: USB bulk packet size fix
+bf54f31e1fbe usb: gadget: composite: fix incorrect handling of OS desc requests
+2e94f8cde347 usb: gadget: udc: change comparison to bitshift when dealing with a mask
+5209c778346a usb: gadget: ffs: Execute copy_to_user() with USER_DS set
+10be2659c629 usb: gadget: ffs: Let setup() return USB_GADGET_DELAYED_STATUS
+26f4a6d638d5 usb: dwc2: host: Fix transaction errors in host mode
+fba46ae2cd7a usb: dwc2: Fix interval type issue
+48701a8f4adb xhci: zero usb device slot_id member when disabling and freeing a xhci slot
+4f46a9164454 usb: dwc3: Update DWC_usb31 GTXFIFOSIZ reg fields
+0acea84f20db usb: dwc3: Add SoftReset PHY synchonization delay
+70d79bf9fbb9 ALSA: usb-audio: Add native DSD support for Luxman DA-06
+e6e57a8592a9 Bluetooth: btusb: Add USB ID 7392:a611 for Edimax EW-7611ULB
+c9dc2614bbeb net-usb: add qmi_wwan if on lte modem wistron neweb d18q1
+a76b68bf31c5 net/usb/qmi_wwan.c: Add USB id for lt4120 modem
+cb30834f103a USB: OHCI: Fix NULL dereference in HCDs using HCD_LOCAL_MEM
+8f271cf4114f usb: cdc_acm: prevent race at write to acm while system resumes
+0e025f5b6371 usb: dwc2: Fix dwc2_hsotg_core_init_disconnected()
+20eeffc5ba32 usb: gadget: fsl_udc_core: fix ep valid checks
+36d64865d334 usb: gadget: core: Fix use-after-free of usb_request
+7a1edc325506 usb: dwc3: omap: don't miss events during suspend/resume
+c6a43f20ff3e usb: dwc3: Undo PHY init if soft reset fails
+d9a19ff1fa9a usb: gadget: f_uac2: fix bFirstInterface in composite gadget
+a81f40158573 x86/kexec: Avoid double free_page() upon do_kexec_load() failure
+2595f213a4ad hfsplus: stop workqueue when fill_super() failed
+7d73a8c07d84 cfg80211: limit wiphy names to 128 bytes
+6c65719153f9 scsi: zfcp: fix infinite iteration on ERP ready list
+ad2518320bc4 scsi: sg: allocate with __GFP_ZERO in sg_build_indirect()
+e420d9838476 scsi: libsas: defer ata device eh commands to libata
+6089a72d44de s390: use expoline thunks in the BPF JIT
+1ace5fcb2263 s390: extend expoline to BC instructions
+b004790d7ec5 s390: move spectre sysfs attribute code
+b35421ab5735 s390/kernel: use expoline for indirect branches
+caa47e1f7fb8 s390/ftrace: use expoline for indirect branches
+cba0d6c2d630 s390/lib: use expoline for indirect branches
+f37bfc0d20a0 s390/crc32-vx: use expoline for indirect branches
+4a5c26ddfb86 s390: move expoline assembler macros to a header
+63257f26cec0 s390: add assembler macros for CPU alternatives
+808449d2bc56 ext2: fix a block leak
+aab329226163 vmxnet3: use DMA memory barriers where required
+779fd38b60d8 vmxnet3: set the DMA mask before the first DMA map operation
+74a4c09d4b05 tcp: purge write queue in tcp_connect_init()
+a5e907c34721 sock_diag: fix use-after-free read in __sk_free
+6190cce26e40 packet: in packet_snd start writing at link layer allocation
+2ef22bd08dcf net: test tailroom before appending to linear skb
+97b7270c3dc8 net/mlx4_core: Fix error handling in mlx4_init_port_info.
+
+   * packages/apps/Settings/
+
